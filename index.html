@@ -17,6 +17,19 @@
     <script type="text/javascript" src="js/template-scripts.js"></script>
 </head>
 <body class="size-1140">
+
+    <!--JavaScript SDK for FaceBook-->
+    <div id="fb-root"></div>
+    <script>
+        (function (d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.8";
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));</script>
+
+
     <!-- TOP NAV WITH LOGO -->
     <header>
         <div id="topbar">
@@ -169,10 +182,10 @@
                         <a class="tab-label active-btn">Race Videos</a>
                         <div class="tab-content">
                             <div class="margin">
-                                <div class="s-12 m-6 l-3"><a class="our-work-container lightbox margin-bottom"><div class="our-work-text"><h4>Lorem Ipsum Dolor</h4><p>Laoreet dolore magna aliquam erat volutpat.</p></div><img src="img/mosquito7.jpg" alt="" style="width:420px;height:420px;"></a></div>
-                                <div class="s-12 m-6 l-3"><a class="our-work-container lightbox margin-bottom"><div class="our-work-text"><h4>Lorem Ipsum Dolor</h4><p>Laoreet dolore magna aliquam erat volutpat.</p></div><img src="img/mosquito2.jpg" alt="" style="width:420px;height:420px;"></a></div>
-                                <div class="s-12 m-6 l-3"><a class="our-work-container lightbox margin-bottom"><div class="our-work-text"><h4>Lorem Ipsum Dolor</h4><p>Laoreet dolore magna aliquam erat volutpat.</p></div><img src="img/mosquito1.jpg" alt="" style="width:420px;height:420px;"></a></div>
-                                <div class="s-12 m-6 l-3"><a class="our-work-container lightbox margin-bottom"><div class="our-work-text"><h4>Lorem Ipsum Dolor</h4><p>Laoreet dolore magna aliquam erat volutpat.</p></div><img src="img/mosquito3.jpg" alt="" style="width:420px;height:420px;"></a></div>
+                                <div class="s-12 m-6 l-3"><a class="our-work-container lightbox margin-bottom"><div class="our-work-text"><h4>Lorem Ipsum Dolor</h4><p>Laoreet dolore magna aliquam erat volutpat.</p></div><img src="img/mosquito7.jpg" alt="" style="width:420px;height:300px;"></a></div>
+                                <div class="s-12 m-6 l-3"><a class="our-work-container lightbox margin-bottom"><div class="our-work-text"><h4>Lorem Ipsum Dolor</h4><p>Laoreet dolore magna aliquam erat volutpat.</p></div><img src="img/mosquito2.jpg" alt="" style="width:420px;height:300px;"></a></div>
+                                <div class="s-12 m-6 l-3"><a class="our-work-container lightbox margin-bottom"><div class="our-work-text"><h4>Lorem Ipsum Dolor</h4><p>Laoreet dolore magna aliquam erat volutpat.</p></div><img src="img/mosquito1.jpg" alt="" style="width:420px;height:300px;"></a></div>
+                                <div class="s-12 m-6 l-3"><a class="our-work-container lightbox margin-bottom"><div class="our-work-text"><h4>Lorem Ipsum Dolor</h4><p>Laoreet dolore magna aliquam erat volutpat.</p></div><img src="img/mosquito3.jpg" alt="" style="width:420px;height:300px;"></a></div>
                             </div>
                         </div>
                     </div>
@@ -212,7 +225,46 @@
                 </div>
             </div>
         </div>
-        <!-- SERVICES -->
+
+        <!--Vote For Sock-->
+        <div id="first-block" class="text-center" style="text-align:center;">
+            <div class="line">
+                <h2 class="section-title">Vote your Favorite Sock!</h2>
+            </div>
+            <div id="first-block">
+                <center>
+                    <form method="post" action="http://poll.pollcode.com/85928767">
+                        <div style="background-color:#00283a;padding:2px;width:419px;font-family:Arial;font-size:x-large;color:#ffffff;outline-style:solid;outline-color:#6f9600; outline-width:thick">
+                            <div style="padding:2px 0px 4px 2px;">
+                                <strong>Vote Below</strong>
+                            </div>
+                            <input type="radio" name="answer" value="1" id="answer859287671" style="float:left;" />
+                            <label for="answer859287671" style="float:left;width:394px;">Alex's Socks (Mosquito Count: 29)</label>
+                            <div style="clear:both;height:2px;">
+
+                            </div>
+                            <input type="radio" name="answer" value="2" id="answer859287672" style="float:left;" />
+                            <label for="answer859287672" style="float:left;width:394px;">Salum's Socks (Mosquito Count: 26)</label>
+                            <div style="clear:both;height:2px;"></div><input type="radio" name="answer" value="3" id="answer859287673" style="float:left;" />
+                            <label for="answer859287673" style="float:left;width:394px;">Eldad's Socks (Mosquito Count: 23)</label><div style="clear:both;height:2px;"></div>
+                            <input type="radio" name="answer" value="4" id="answer859287674" style="float:left;" /><label for="answer859287674" style="float:left;width:394px;">Sam's Socks (Mosquito Count: 23)</label>
+                            <div style="clear:both;height:2px;"></div><input type="radio" name="answer" value="5" id="answer859287675" style="float:left;" />
+                            <label for="answer859287675" style="float:left;width:394px;">Manuu's Socks (Mosquito Count: 22)</label><div style="clear:both;height:2px;"></div>
+                            <div align="center" style="padding:3px;">
+                                <input style="width:10em;height:3em;" type="submit" value="Vote">&nbsp;
+                                <input style="width:10em;height:3em;" type="submit" name="view" value="View">
+                            </div>
+                            <div align="right" style="font-size:10px">
+                                pollcode.com <a href="http://pollcode.com/">free polls</a>
+                            </div>
+
+                        </div>
+                    </form>
+                </center>
+            </div>
+        </div>
+
+        <!-- Donate -->
         <div id="services">
             <div class="line">
                 <h2 class="section-title">Donate</h2>
@@ -241,11 +293,13 @@
                 </div>
             </div>
         </div>
-        <!--LATEST NEWS
+
+        <!--Add to Conversation-->
         <div id="latest-news">
-            <div class="line">
-                <h2 class="section-title">Latest News</h2>
-                <div class="margin">
+            <div class="line text-center">
+                <h2 class="section-title">Add to the Conversation</h2>
+                <div style="background-color:#ffffff " class="fb-comments" data-href="https://hebrewhammer18.github.io/smelly-socks-proj/" data-width="600%" data-numposts="10"></div>
+                <!--<div class="margin">
                     <div class="s-12 m-6 l-6">
                         <div class="s-12 l-2">
                             <div class="news-date">
@@ -270,11 +324,11 @@
                                 <h4>Second latest News</h4>
                                 <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam.</p>
                             </div>
-                        </div>
-                    </div>
-                </div>
+                        </div>-->
+                <!--</div>
+                </div>-->
             </div>
-        </div>-->
+        </div>
         <!-- CONTACT -->
         <div id="contact">
             <div class="line">
